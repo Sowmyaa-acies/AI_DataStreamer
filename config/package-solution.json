@@ -1,0 +1,40 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/package-solution.schema.json",
+  "solution": {
+    "name": "ai-data-streamer-client-side-solution",
+    "id": "6e1353a6-0d57-45c2-a940-e106acd9f370",
+    "version": "1.0.0.0",
+    "includeClientSideAssets": true,
+    "skipFeatureDeployment": true,
+    "isDomainIsolated": false,
+    "developer": {
+      "name": "",
+      "websiteUrl": "",
+      "privacyUrl": "",
+      "termsOfUseUrl": "",
+      "mpnId": "Undefined-1.20.0"
+    },
+    "metadata": {
+      "shortDescription": {
+        "default": "AI_DataStreamer description"
+      },
+      "longDescription": {
+        "default": "AI_DataStreamer description"
+      },
+      "screenshotPaths": [],
+      "videoUrl": "",
+      "categories": []
+    },
+    "features": [
+      {
+        "title": "ai-data-streamer Feature",
+        "description": "The feature that activates elements of the ai-data-streamer solution.",
+        "id": "b2ef1d78-998b-4ed7-9c3c-03130c7cfc2e",
+        "version": "1.0.0.0"
+      }
+    ]
+  },
+  "paths": {
+    "zippedPackage": "solution/ai-data-streamer.sppkg"
+  }
+}

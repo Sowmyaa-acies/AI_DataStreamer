@@ -1,0 +1,159 @@
+@import '~@microsoft/sp-office-ui-fabric-core/dist/sass/SPFabricCore.scss';
+
+.aiDataStreamer {
+  font-family: 'Poppins', sans-serif;
+  padding: 40px 60px;
+  position: relative;
+  color: #1a1a1a;
+}
+
+/* ---- Headings ---- */
+.h2 {
+  color: #1e2a6f;
+  font-size: 26px;
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+
+.subtitle{
+  color: #555;
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+
+/* ---- Cards ---- */
+.cardsSection {
+  display: flex;
+  flex-direction: column;
+  gap: 26px;
+  max-width: 1100px;
+}
+
+.card {
+  background: #fff;
+  border: 1px solid #d8d9ea;
+  border-radius: 14px;
+  padding: 28px 24px;
+  box-sizing: border-box;
+  transition: box-shadow 0.2s ease;
+}
+
+.card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.cardText {
+  font-size: 15px;
+  margin-bottom: 20px;
+  color: #222;
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 13px;
+}
+
+.author {
+  color: #23307a;
+  font-weight: 600;
+}
+
+.separator {
+  width: 1px;
+  height: 12px;
+  background: #d0d0e0;
+  display: inline-block;
+}
+
+.date {
+  color: #4a4a4a;
+  font-weight: 500;
+}
+
+/* ---- Decorative Scroll Indicator ---- */
+.rightLine {
+  position: fixed;            /* fix to viewport */
+  top: 100px;
+  right: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 10;
+}
+
+.lineTrack {
+  width: 4px;
+  height: 70vh;               /* height relative to viewport */
+  background: #e2e2e2;
+  border-radius: 4px;
+  position: absolute;
+  overflow: hidden;
+}
+
+.lineThumb {
+  width: 6px;
+  height: 80px;
+  background: #1e2a6f;
+  border-radius: 3px;
+  position: scroll;
+  top: 0;
+  right: -1px;
+  transition: top 0.2s linear;
+}
+
+/* Hide for small screens */
+@media (max-width: 768px) {
+  .rightLine {
+    display: none;
+  }
+}
+
+
+/* ---- Responsive ---- */
+@media (max-width: 1024px) {
+  .aiDataStreamer {
+    padding: 30px;
+  }
+  .mainHeading {
+    font-size: 24px;
+  }
+  .card {
+    padding: 22px;
+  }
+  .lineTrack {
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  .aiDataStreamer {
+    padding: 20px;
+  }
+
+  .rightLine {
+    display: none;
+  }
+
+  .cardsSection {
+    gap: 18px;
+  }
+
+  .card {
+    padding: 18px;
+    border-radius: 10px;
+  }
+
+  .cardText {
+    font-size: 14px;
+  }
+
+  .mainHeading {
+    font-size: 22px;
+  }
+
+  .subHeading {
+    font-size: 14px;
+  }
+}

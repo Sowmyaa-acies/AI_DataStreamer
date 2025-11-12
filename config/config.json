@@ -1,0 +1,18 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/spfx-build/config.2.0.schema.json",
+  "version": "2.0",
+  "bundles": {
+    "ai-data-streamer-web-part": {
+      "components": [
+        {
+          "entrypoint": "./lib/webparts/aiDataStreamer/AiDataStreamerWebPart.js",
+          "manifest": "./src/webparts/aiDataStreamer/AiDataStreamerWebPart.manifest.json"
+        }
+      ]
+    }
+  },
+  "externals": {},
+  "localizedResources": {
+    "AiDataStreamerWebPartStrings": "lib/webparts/aiDataStreamer/loc/{locale}.js"
+  }
+}
